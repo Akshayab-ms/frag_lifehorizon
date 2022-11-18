@@ -48,9 +48,10 @@ class PreferenceFragment : Fragment() {
 
             if (txtinOne == "Bangalore") {
 
-                val bundle= bundleOf("cityname" to txtinOne)
+                val bundle = bundleOf("cityname" to txtinOne)
 
-                view.findNavController().navigate(R.id.action_preferenceFragment_to_finalFragment,bundle)
+                view.findNavController()
+                    .navigate(R.id.action_preferenceFragment_to_finalFragment, bundle)
 
 
 //                intent = Intent(this, TempActivity::class.java)
@@ -65,23 +66,26 @@ class PreferenceFragment : Fragment() {
                 /*intent = Intent(this, TempActivity::class.java)
                 intent.putExtra("cityname", txtinOne)
                 startActivity(intent)*/
-                val bundle= bundleOf("cityname" to txtinOne)
+                val bundle = bundleOf("cityname" to txtinOne)
 
-                view.findNavController().navigate(R.id.action_preferenceFragment_to_finalFragment,bundle)
+                view.findNavController()
+                    .navigate(R.id.action_preferenceFragment_to_finalFragment, bundle)
             } else if (txtinOne == "Mysore") {
                 /* val url = "https://www.javatpoint.com/kotlin-android-textview-and-edittext"
                  intent = Intent(Intent.ACTION_VIEW)
                  intent.data = Uri.parse(url)
                  startActivity(intent)*/
-              /*  intent = Intent(this, TempActivity::class.java)
-                intent.putExtra("cityname", txtinOne)
-                startActivity(intent)*/
-                val bundle= bundleOf("cityname" to txtinOne)
+                /*  intent = Intent(this, TempActivity::class.java)
+                  intent.putExtra("cityname", txtinOne)
+                  startActivity(intent)*/
+                val bundle = bundleOf("cityname" to txtinOne)
 
-                view.findNavController().navigate(R.id.action_preferenceFragment_to_finalFragment,bundle)
+                view.findNavController()
+                    .navigate(R.id.action_preferenceFragment_to_finalFragment, bundle)
 
             } else {
-                Toast.makeText(getActivity(),
+                Toast.makeText(
+                    getActivity(),
                     "Does not match",
                     Toast.LENGTH_SHORT
                 ).show()
@@ -100,12 +104,13 @@ class PreferenceFragment : Fragment() {
                   intent = Intent(Intent.ACTION_VIEW)
                   intent.data = Uri.parse(url)
                   startActivity(intent)*/
-              /*  intent = Intent(this, TempActivity::class.java)
-                intent.putExtra("cityname", txtinTwo)
-                startActivity(intent)*/
-                val bundle= bundleOf("cityname" to txtinTwo)
+                /*  intent = Intent(this, TempActivity::class.java)
+                  intent.putExtra("cityname", txtinTwo)
+                  startActivity(intent)*/
+                val bundle = bundleOf("cityname" to txtinTwo)
 
-                view.findNavController().navigate(R.id.action_preferenceFragment_to_finalFragment,bundle)
+                view.findNavController()
+                    .navigate(R.id.action_preferenceFragment_to_finalFragment, bundle)
 
             } else if (txtinTwo == "Hyderabad") {
                 /*  val url = "http://www.google.com"
@@ -115,21 +120,23 @@ class PreferenceFragment : Fragment() {
                 /*intent = Intent(this, TempActivity::class.java)
                 intent.putExtra("cityname", txtinTwo)
                 startActivity(intent)*/
-                val bundle= bundleOf("cityname" to txtinTwo)
+                val bundle = bundleOf("cityname" to txtinTwo)
 
-                view.findNavController().navigate(R.id.action_preferenceFragment_to_finalFragment,bundle)
+                view.findNavController()
+                    .navigate(R.id.action_preferenceFragment_to_finalFragment, bundle)
 
             } else if (txtinTwo == "Pune") {
                 /*  val url = "http://www.google.com"
               intent = Intent(Intent.ACTION_VIEW)
               intent.data = Uri.parse(url)
               startActivity(intent)*/
-               /* intent = Intent(this, TempActivity::class.java)
-                intent.putExtra("cityname", txtinTwo)
-                startActivity(intent)*/
-                val bundle= bundleOf("cityname" to txtinTwo)
+                /* intent = Intent(this, TempActivity::class.java)
+                 intent.putExtra("cityname", txtinTwo)
+                 startActivity(intent)*/
+                val bundle = bundleOf("cityname" to txtinTwo)
 
-                view.findNavController().navigate(R.id.action_preferenceFragment_to_finalFragment,bundle)
+                view.findNavController()
+                    .navigate(R.id.action_preferenceFragment_to_finalFragment, bundle)
 
 
             } else {
@@ -151,37 +158,41 @@ class PreferenceFragment : Fragment() {
                 /*intent = Intent(this, TempActivity::class.java)
                 intent.putExtra("cityname", txtinThree)
                 startActivity(intent)*/
-                val bundle= bundleOf("cityname" to txtinTwo)
+                val bundle = bundleOf("cityname" to txtinTwo)
 
-                view.findNavController().navigate(R.id.action_preferenceFragment_to_finalFragment,bundle)
+                view.findNavController()
+                    .navigate(R.id.action_preferenceFragment_to_finalFragment, bundle)
 
             } else if (txtinThree == "Coimbatore") {
                 /*  val url = "http://www.google.com"
                intent = Intent(Intent.ACTION_VIEW)
                intent.data = Uri.parse(url)
                startActivity(intent)*/
-              /*  intent = Intent(this, TempActivity::class.java)
-                intent.putExtra("cityname", txtinThree)
-                startActivity(intent)*/
-                val bundle= bundleOf("cityname" to txtinThree)
+                /*  intent = Intent(this, TempActivity::class.java)
+                  intent.putExtra("cityname", txtinThree)
+                  startActivity(intent)*/
+                val bundle = bundleOf("cityname" to txtinThree)
 
-                view.findNavController().navigate(R.id.action_preferenceFragment_to_finalFragment,bundle)
+                view.findNavController()
+                    .navigate(R.id.action_preferenceFragment_to_finalFragment, bundle)
 
             } else if (txtinThree == "Belgaum") {
                 /*  val url = "http://www.google.com"
                  intent = Intent(Intent.ACTION_VIEW)
                  intent.data = Uri.parse(url)
                  startActivity(intent)*/
-              /*  intent = Intent(this, TempActivity::class.java)
-                intent.putExtra("cityname", txtinThree)
-                startActivity(intent)*/
-                val bundle= bundleOf("cityname" to txtinThree)
+                /*  intent = Intent(this, TempActivity::class.java)
+                  intent.putExtra("cityname", txtinThree)
+                  startActivity(intent)*/
+                val bundle = bundleOf("cityname" to txtinThree)
 
-                view.findNavController().navigate(R.id.action_preferenceFragment_to_finalFragment,bundle)
+                view.findNavController()
+                    .navigate(R.id.action_preferenceFragment_to_finalFragment, bundle)
 
 
             } else {
-                Toast.makeText(getActivity(),
+                Toast.makeText(
+                    getActivity(),
                     "Does not match",
                     Toast.LENGTH_SHORT
                 ).show()
@@ -192,35 +203,30 @@ class PreferenceFragment : Fragment() {
     }
 
 
+    fun city() {
 
 
-
-    fun city(){
-
-
-        var id=arguments?.getInt("id_value")
+        var id = arguments?.getInt("id_value")
 
 
 
 
 
-        Log.d("hjj","hh"+id)
-
-
+        Log.d("hjj", "hh" + id)
 
 
         //val bundle:Bundle?=view.findViewById<TextView>(R.id.)
         /*val bundle: Bundle? = intent.extras
         var id = bundle?.get("cityname") as Int*/
-        Log.d("hjj","hh"+id)
-        Log.d("MainActivity","onCreate() method finished"+"  "+id)
+        Log.d("hjj", "hh" + id)
+        Log.d("MainActivity", "onCreate() method finished" + "  " + id)
 
 
 
         if (id != null) {
-            if(id>3) {
+            if (id > 3) {
 
-                Log.d("jj","hh"+id)
+                Log.d("jj", "hh" + id)
 
                 cityone.setText("Bangalore").toString()
                 citytwo.setText("Chennai").toString()
@@ -231,7 +237,7 @@ class PreferenceFragment : Fragment() {
                             Log.d("one", "helo" + print("chennai"))
                             Log.d("one", "helo" + print("bamg"))
                             Log.d("one", "helo" + print("cmbt"))*/
-            } else if(id==3){
+            } else if (id == 3) {
                 cityone.setText("Kerala").toString()
                 citytwo.setText("Hyderabad").toString()
                 cityThree.setText("Coimbatore").toString()
@@ -248,7 +254,7 @@ class PreferenceFragment : Fragment() {
                               Log.d("ne", "helo" + print("cmbt"))*/
             }
         }
-        }
+    }
 }
 
 

@@ -9,23 +9,22 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
 
         android:layout_width="match_parent"
-        android:background="@drawable/grd_color_view"
         android:layout_height="match_parent"
-        >
+        android:background="@drawable/grd_color_view">
 
         <TextView
             android:id="@+id/tv_first"
             android:layout_width="0dp"
             android:layout_height="50dp"
+            android:layout_marginTop="116dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/tv_grad"
             android:gravity="center"
+
+            android:hint="Choice One"
             android:textAlignment="center"
             android:textSize="20dp"
-            android:layout_marginTop="116dp"
-
             android:textStyle="bold"
-            android:background="@drawable/tv_grad"
-            android:layout_marginEnd="32dp"
-            android:hint="First Preference"
             app:layout_constraintEnd_toStartOf="@+id/tv_firstp"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/view"
@@ -33,15 +32,15 @@
 
         <TextView
             android:id="@+id/tv_firstp"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="50dp"
+            android:layout_marginEnd="102dp"
+            android:background="@drawable/tv_grad"
             android:gravity="center"
+            android:hint="TextView"
             android:textAlignment="center"
             android:textSize="20dp"
-            android:background="@drawable/tv_grad"
             android:textStyle="bold"
-            android:layout_marginEnd="102dp"
-            android:hint="TextView"
             app:layout_constraintBottom_toBottomOf="@+id/tv_first"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tv_first" />
@@ -50,8 +49,8 @@
             android:id="@+id/view"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:background="@drawable/tv_grad"
             android:layout_marginStart="68dp"
+            android:background="@drawable/tv_grad"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -60,14 +59,14 @@
         <TextView
             android:id="@+id/tv_second"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
 
+            android:background="@drawable/tv_grad"
+            android:gravity="center"
+            android:hint="Choice two"
             android:textAlignment="center"
             android:textSize="20dp"
-            android:layout_marginTop="24dp"
-            android:background="@drawable/tv_grad"
-            android:hint="second preference"
 
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/tv_first"
@@ -76,14 +75,14 @@
 
         <TextView
             android:id="@+id/tv_secondp"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
 
             android:layout_height="50dp"
+            android:background="@drawable/tv_grad"
             android:gravity="center"
+            android:text="TextView"
             android:textAlignment="center"
             android:textSize="20dp"
-            android:background="@drawable/tv_grad"
-            android:text="TextView"
 
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/tv_second"
@@ -95,11 +94,11 @@
             android:id="@+id/tv_third"
             android:layout_width="0dp"
 
+            android:layout_height="50dp"
             android:layout_marginTop="24dp"
             android:background="@drawable/tv_grad"
-            android:text="Third preference"
-            android:layout_height="50dp"
             android:gravity="center"
+            android:text="Choice three"
             android:textAlignment="center"
             android:textSize="20dp"
 
@@ -110,13 +109,13 @@
 
         <TextView
             android:id="@+id/tv_thirdp"
-            android:layout_width="wrap_content"
-
-            android:hint="TextView"
-            android:background="@drawable/tv_grad"
+            android:layout_width="0dp"
 
             android:layout_height="50dp"
+            android:background="@drawable/tv_grad"
+
             android:gravity="center"
+            android:hint="TextView"
             android:textAlignment="center"
             android:textSize="20dp"
             android:textStyle="bold"
@@ -131,12 +130,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="132dp"
 
-            android:gravity="center"
-            android:textColor="@color/black"
             android:background="@drawable/tv_grad"
-            android:textStyle="bold"
+            android:gravity="center"
             android:text="Your Top suggestions are Here"
+            android:textColor="@color/black"
             android:textSize="30dp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/tv_firstp"
             app:layout_constraintHorizontal_bias="0.4"
             app:layout_constraintStart_toEndOf="@+id/view"

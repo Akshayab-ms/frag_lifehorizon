@@ -43,10 +43,7 @@ class FinalFragment : Fragment() {
 
 
 
-        city1= arguments?.getString("cityname") as String
-
-
-
+        city1 = arguments?.getString("cityname") as String
 
 
         //Log.d("hjj","hh"+id)
@@ -140,30 +137,27 @@ class FinalFragment : Fragment() {
     fun getWeatherDetails() {
 
 
-
-
-
-            val url =
-                "https://api.openweathermap.org/data/2.5/weather?q=$city1&appid=0d6c51cd2b5959387bf840e166bc5776"
-            val appid = "0d6c51cd2b5959387bf840e166bc5776"
-            val queue = Volley.newRequestQueue(activity)
-            val request = JsonObjectRequest(
-                Request.Method.GET, url, null,
-                { response ->
-                    try {
-                        val `object` = response.getJSONObject("main")
-                        val object1 = response.getJSONObject("coord")
-                        val lone = object1.getString("lon")
-                        val lane = object1.getString("lat")
-                        val temperature = `object`.getString("temp")
-                        tvResult!!.append("country:$city1,Temperature:$temperature,longitude:$lone,latitude$lane\n\n")
-                    } catch (e: JSONException) {
-                        Toast.makeText(activity, "erro", Toast.LENGTH_LONG).show()
-                    }
+        val url =
+            "https://api.openweathermap.org/data/2.5/weather?q=$city1&appid=0d6c51cd2b5959387bf840e166bc5776"
+        val appid = "0d6c51cd2b5959387bf840e166bc5776"
+        val queue = Volley.newRequestQueue(activity)
+        val request = JsonObjectRequest(
+            Request.Method.GET, url, null,
+            { response ->
+                try {
+                    val `object` = response.getJSONObject("main")
+                    val object1 = response.getJSONObject("coord")
+                    val lone = object1.getString("lon")
+                    val lane = object1.getString("lat")
+                    val temperature = `object`.getString("temp")
+                    tvResult!!.append("country:$city1,Temperature:$temperature,longitude:$lone,latitude$lane\n\n")
+                } catch (e: JSONException) {
+                    Toast.makeText(activity, "erro", Toast.LENGTH_LONG).show()
                 }
-            ) { Toast.makeText(activity, "eehh", Toast.LENGTH_LONG).show() }
-            queue.add(request)
-        }
+            }
+        ) { Toast.makeText(activity, "eehh", Toast.LENGTH_LONG).show() }
+        queue.add(request)
     }
+}
 
 

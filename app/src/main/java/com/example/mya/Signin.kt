@@ -23,29 +23,31 @@ class Signin : Fragment() {
     var sharedPreferences: SharedPreferences? = null
 
 
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view =inflater.inflate(R.layout.fragment_signin, container, false)
+        val view = inflater.inflate(R.layout.fragment_signin, container, false)
 
-         sharedPreferences = requireActivity().applicationContext.getSharedPreferences("MyPREFERENCES",   Context.MODE_PRIVATE) // kotlin
+        sharedPreferences = requireActivity().applicationContext.getSharedPreferences(
+            "MyPREFERENCES",
+            Context.MODE_PRIVATE
+        ) // kotlin
 
         //sharedPreferences = getSharedPreferences(MyPREFERENCES, AppCompatActivity.MODE_PRIVATE)
         lphno = view.findViewById(R.id.mobile)
         lpassword = view.findViewById(R.id.password)
         lbutton = view.findViewById(R.id.button_signin)
-        lbutton?.setOnClickListener(View.OnClickListener { checkLoginDetails()
+        lbutton?.setOnClickListener(View.OnClickListener {
+            checkLoginDetails()
 
-           // findNavController().navigate(R.id.action_signin2_to_optionFragment)
+            // findNavController().navigate(R.id.action_signin2_to_optionFragment)
 
 
-         /* val transaction = activity?.supportFragmentManager?.beginTransaction()
-            transaction?.replace(R.id.frame_signin, Fragment())
-            transaction?.disallowAddToBackStack()
-            transaction?.commit()*/
+            /* val transaction = activity?.supportFragmentManager?.beginTransaction()
+               transaction?.replace(R.id.frame_signin, Fragment())
+               transaction?.disallowAddToBackStack()
+               transaction?.commit()*/
         })
 
 
